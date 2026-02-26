@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trader App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Trader</h1>
+      <p class="subtitle">Trade one item for another when both people agree.</p>
+
+      <section class="trade-grid">
+        <article class="card" id="trader-a-card">
+          <h2>Trader A</h2>
+          <label>
+            Name
+            <input id="traderAName" type="text" placeholder="Alex" />
+          </label>
+          <label>
+            Item to trade
+            <input id="traderAItem" type="text" placeholder="Skateboard" />
+          </label>
+          <button id="acceptA" class="accept-btn" disabled>Accept Trade</button>
+        </article>
+
+        <article class="card" id="trader-b-card">
+          <h2>Trader B</h2>
+          <label>
+            Name
+            <input id="traderBName" type="text" placeholder="Jordan" />
+          </label>
+          <label>
+            Item to trade
+            <input id="traderBItem" type="text" placeholder="Guitar" />
+          </label>
+          <button id="acceptB" class="accept-btn" disabled>Accept Trade</button>
+        </article>
+      </section>
+
+      <div class="actions">
+        <button id="proposeTrade">Propose Trade</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <section class="status" id="status" aria-live="polite">
+        Enter both names and items, then click <strong>Propose Trade</strong>.
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
