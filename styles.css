@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #141e30, #243b55);
+}
+
+.app {
+  width: min(920px, 92vw);
+  background: rgba(255, 255, 255, 0.95);
+  color: #111827;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #4b5563;
+}
+
+.trade-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.card {
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 16px;
+  background: #f9fafb;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+#proposeTrade {
+  background: #2563eb;
+  color: white;
+}
+
+.accept-btn {
+  width: 100%;
+  background: #e5e7eb;
+}
+
+.accept-btn.active {
+  background: #10b981;
+  color: #052e16;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+#reset {
+  background: #e5e7eb;
+}
+
+.status {
+  margin-top: 16px;
+  border-left: 4px solid #2563eb;
+  background: #eff6ff;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .trade-grid {
+    grid-template-columns: 1fr;
+  }
+}
